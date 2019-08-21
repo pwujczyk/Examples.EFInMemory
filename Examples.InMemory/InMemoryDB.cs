@@ -29,7 +29,10 @@ namespace Examples.InMemory
             }
             else
             {
-                optionsBuilder.UseSqlServer(@"Server=.\sql2017;Database=EFProviders.InMemory;Trusted_Connection=True;ConnectRetryCount=0");
+                if (!optionsBuilder.IsConfigured)
+                {
+                    optionsBuilder.UseSqlServer(@"Server=.\sql2017;Database=EFProviders.InMemory;Trusted_Connection=True;ConnectRetryCount=0");
+                }
             }
 
 
