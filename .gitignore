@@ -1,0 +1,11 @@
+[Oo]bj/
+[Bb]in/
+_ReSharper.*
+packages/
+artifacts/
+*.user
+*.suo
+out/
+/out/*.dll
+*.sqlite
+.vs
